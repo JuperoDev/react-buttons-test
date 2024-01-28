@@ -11,7 +11,10 @@ function ExamPage() {
     newSelectedAnswers[index] = value;
     setSelectedAnswers(newSelectedAnswers);
   };
-
+  const labelStyle = {
+    textDecoration: 'underline',
+  };
+  
   return (
     <div>
       <h1>Exam Page</h1>
@@ -20,25 +23,23 @@ function ExamPage() {
           <li key={index}>
             {item.question}
             <br />
-            <label>
-              <input
+            <label style={labelStyle}>
+              <input 
                 type="radio"
                 name={`answer_${index}`}
                 value="Verdadero"
                 checked={selectedAnswers[index] === "Verdadero"}
                 onChange={() => handleRadioChange(index, "Verdadero")}
-                disabled={selectedAnswers[index] !== null}
               />
               Verdadero
             </label>
-            <label>
+            <label style={labelStyle}>
               <input
                 type="radio"
                 name={`answer_${index}`}
                 value="Falso"
                 checked={selectedAnswers[index] === "Falso"}
                 onChange={() => handleRadioChange(index, "Falso")}
-                disabled={selectedAnswers[index] !== null}
               />
               Falso
             </label>

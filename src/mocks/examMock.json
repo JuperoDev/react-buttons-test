@@ -1,4 +1,6 @@
 {
+    "examName":"Estructuras III",
+    "examCategorie":"Tecnología",
     "questionSet": [
         {
             "question":"El esfuerzo cortante solo aparece cuando cortamos algo",
