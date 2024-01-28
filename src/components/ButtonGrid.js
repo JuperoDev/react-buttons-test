@@ -1,43 +1,21 @@
 import React from "react";
 
-const buttonStyle = {
-  backgroundColor: "green",
-  borderRadius: "50px",
-  padding: "10px 20px",
-  color: "white",
-  marginRight: "10px",
-  cursor: "pointer",
-};
-
-const disabledButtonStyle = {
-  backgroundColor: "gray",
-  borderRadius: "50px",
-  padding: "10px 20px",
-  color: "white",
-  marginRight: "10px",
-  cursor: "not-allowed",
-};
-
 const ButtonGrid = ({ onStartButtonClick }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
+    <div className="flex justify-center items-center h-screen">
       <div>
         <button
-          style={buttonStyle}
+          className="bg-green-500 rounded-full px-5 py-2 text-white mr-4 cursor-pointer"
           onClick={() => {
             onStartButtonClick(); // Notify the parent component
           }}
         >
           Empezar prueba
         </button>
-        <button style={disabledButtonStyle} disabled>
+        <button
+          className="bg-green-900 rounded-full px-5 py-2 text-white mr-4 cursor-not-allowed"
+          disabled
+        >
           Ver resultados
         </button>
       </div>

@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
 import ButtonGrid from './components/ButtonGrid';
-import ExamPage from './components/ExamPage'
+import ExamPage from './components/ExamPage';
 
 function App() {
-  const [showHello, setShowHello] = useState(false);
+  const [showExam, setShowExam] = useState(false);
 
   const handleStartButtonClick = () => {
-    setShowHello(true);
+    setShowExam(true);
   };
 
   return (
     <div className="App">
-      {!showHello ? (
-        <ButtonGrid onStartButtonClick={handleStartButtonClick} />
+      <div>
+        Hola
+      </div>
+      {!showExam ? (
+       <ButtonGrid onStartButtonClick={handleStartButtonClick} data-testid="buttonGrid" />
       ) : (
         <div>
-          <ExamPage/>
+          <ExamPage />
         </div>
       )}
     </div>
