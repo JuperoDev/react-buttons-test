@@ -1,0 +1,20 @@
+{
+    "questionSet": [
+        {
+            "question":"El esfuerzo cortante solo aparece cuando cortamos algo",
+            "correctAnswer":"Verdadero"
+        },
+        {
+            "question":"La tracción es un esfuerzo que tiende a estirar un objeto",
+            "correctAnswer":"Verdadero"
+        },
+        {
+            "question":"El esqueleto humano está sometido básicamente al esfuerzo de compresión",
+            "correctAnswer":"Falso"
+        },
+        {
+            "question":"Un vaso de plástico no tiene ningún tipo de estructura",
+            "correctAnswer":"Falso"
+        }
+    ]
+}
